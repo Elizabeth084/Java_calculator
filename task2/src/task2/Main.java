@@ -3,9 +3,9 @@ package task2;
 public class Main {
 	public static void main(String[] args) {
         if (args.length < 1) {
-            System.out.println("Âû íå ïåðåäàâàëè ïàðàìåòðîâ");
+            System.out.println("Ð’Ñ‹ Ð½Ðµ Ð¿ÐµÑ€ÐµÐ´Ð°Ð²Ð°Ð»Ð¸ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²");
         } else {
-            System.out.println("Âû ââåëè " + args.length + " ïàðàìåòðîâ");
+            System.out.println("Ð’Ñ‹ Ð²Ð²ÐµÐ»Ð¸ " + args.length + " Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¾Ð²");
         }
     }
 }

@@ -5,10 +5,10 @@ public class Main {
 		String login = "lord";
 		String password = "12345lord";
 		if (login.equals(args[0]) && password.equals(args[1])) {
-			System.out.println("Вас узнали. Добро пожаловать");
+			System.out.println("Р’Р°СЃ СѓР·РЅР°Р»Рё. Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ");
 			
 		} else {
-			System.out.println("Логин и пароль не распознаны. Доступ запрещён");
+			System.out.println("Р›РѕРіРёРЅ Рё РїР°СЂРѕР»СЊ РЅРµ СЂР°СЃРїРѕР·РЅР°РЅС‹. Р”РѕСЃС‚СѓРї Р·Р°РїСЂРµС‰С‘РЅ");
 		}
 			
 	}

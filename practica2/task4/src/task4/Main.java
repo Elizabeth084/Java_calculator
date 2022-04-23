@@ -16,32 +16,38 @@ public class Main {
         int matrix[][]=new int [n][n];
         for (int i=0;i<n;i++) {
             for (int j = 0; j < n; j++) {
-                matrix[i][j]=(int) (4-Math.random()*7);
+                matrix[i][j]=(int) (Math.random()*100);
             }
         }
         printMatrix(matrix);
         System.out.println();
-        float sum=0;
-        int count=0;
-        for (int i=0;i<n-1;i++){
-            for(int j=i+1;j<n;j++) {
-               
-                if (matrix[i][j]>0){
-                    sum+=matrix[i][j];
-                    count++;
+        int min=matrix[0][0];
+        int minI=0;
+        int minJ=0;
+        int maxI=0;
+        int maxJ=0;
+        int max=matrix[0][0];
+        for (int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if (i==j){
+                    if (matrix[i][j]>max) {
+                        max = matrix[i][j];
+                        maxI=i;
+                        maxJ=j;
+                    }
+                    if (matrix[i][j]<min){
+                        min=matrix[i][j];
+                        minI=i;
+                        minJ=j;
+                    }
                 }
             }
-          
-        }
-        if (count!=0){
-            float average=sum/count;
-            System.out.println(average);
-        }
-        else{
-            System.out.println(sum);
         }
 
-
+      int sumIndexMin=minI+minJ;
+        int sumIndexMax=maxI+maxJ;
+        System.out.println(sumIndexMax);
+        System.out.println(sumIndexMin);
 
     }
 }

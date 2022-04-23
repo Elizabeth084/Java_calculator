@@ -16,22 +16,21 @@ public class Main {
         }
     }
     public static void main(String[] args) {
-        int n=30;
+        int n=10;
         int matrix[][]=new int [n][n];
         for (int i=0;i<n;i++) {
             for (int j = 0; j < n; j++) {
-                matrix[i][j]=(int) (10-Math.random()*30);
+                matrix[i][j]=(int) (Math.random()*100);
             }
         }
         printMatrix(matrix);
         int []b=new int[n];
-        for (int j = 0; j < n; j++) {
-
-            int composition=1;
-            for (int i=0;i<n;i++) {
-                if (matrix[i][j]<0) composition*=matrix[i][j];
-            }
-            b[j]=composition;
+        for (int i = 0; i < n; i++) {
+            int min=matrix[i][0];
+           for (int j=1;j<n;j++){
+               if (matrix[i][j]<min) min=matrix[i][j];
+           }
+           b[i]=min;
         }
         printArray(b);
     }

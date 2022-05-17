@@ -1,3 +1,5 @@
+//Дан массив x(n). Переписать в массив y(n) отрицательные элементы массива x умноженные на 2.
+
 import java.util.Random;
 public class Main {
     private static final int n = 5;
